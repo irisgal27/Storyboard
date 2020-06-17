@@ -21,8 +21,9 @@ open class DocumentViewController: UIViewController {
 	public static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentViewControllerDelegate) -> UINavigationController {
 		//let vc = UIStoryboard(name: "DocumentCamara", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController
 		let bundle = Bundle(for: DocumentViewController.self)
-		//let path = bundle.path(forResource: "DocumentCamera", ofType: "storyboard")
-		let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: bundle)
+		let bundleURL =  bundle.resourceURL?.appendingPathComponent("cameraPrub")
+		let resourceBundle = Bundle(url: bundleURL!)
+		let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: resourceBundle)
 		let vc = storyboardBundle.instantiateViewController(identifier: "captureVC") as! DocumentViewController
 		
 		
