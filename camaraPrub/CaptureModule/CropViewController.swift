@@ -98,15 +98,6 @@ class CropViewController: UIViewController, UIGestureRecognizerDelegate{
             topRight.center = CGPoint(x: self.topRight.center.x, y: self.topLeft.center.y)
             bottomLeft.center = CGPoint(x: self.topLeft.center.x, y: self.bottomLeft.center.y)
           }
-          var x = topLeft.center.x;
-          var y = topLeft.center.y;
-          //print(topLeft.center.x, topLeft.center.y)
-          var width = topRight.center.x - topLeft.center.x
-          var height =  bottomLeft.center.y - topLeft.center.y
-          //cuadroVerde = CGRect(x: x, y: y, width: width, height: height)
-         // print("cuadro verde--------",cuadroVerde)
-         // print("image View---------", imageView.frame)
-         // print( "image------------ ",imageView.image?.size)
       }
       case .ended:
         workView = nil
@@ -181,7 +172,7 @@ class CropViewController: UIViewController, UIGestureRecognizerDelegate{
 		else {
 			return
 		}
-    var calculo = calculoRect()
+		let calculo = calculoRect()
    // print("calculo----", calculo)
     //print("calculo----", calculo)
 			if let croppedImage = imageRef.cropping(to: calculo) {

@@ -10,7 +10,7 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "fractanet" => "irisgalgal@outlook.com" }
 s.homepage = "https://github.com/irisgal27/Storyboard"
 s.source = { :git => "https://github.com/irisgal27/Storyboard.git", :tag => "#{s.version}"}
-s.framework = "UIKit","Vision",
+s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
 s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
 end

@@ -25,11 +25,11 @@ extension UIImage{
 			if KBsize  > newWeight {
 				let compressImage = Double(newWeight/KBsize)
 				let newImage = self.jpegData(compressionQuality: CGFloat(compressImage))
-				let base64String = newImage?.base64EncodedData()
-				print("tamaño de imagen comprimido",base64String?.count)
+				//let base64String = newImage?.base64EncodedData()
+				//print("tamaño de imagen comprimido",base64String?.count)
 				return newImage ?? Data()
 			}else{
-				let base64String = image.base64EncodedData()
+				//let base64String = image.base64EncodedData()
 				return image
 			}
 		}
