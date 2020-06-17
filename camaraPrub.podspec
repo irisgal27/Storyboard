@@ -12,7 +12,7 @@ s.homepage = "https://github.com/irisgal27/Storyboard"
 s.source = { :git => "https://github.com/irisgal27/Storyboard.git", :tag => "#{s.version}"}
 s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
-s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
 s.exclude_files = "camaraPrub/*.plist"
+s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
 
