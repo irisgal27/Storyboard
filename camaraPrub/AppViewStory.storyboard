@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mCo-ee-gdO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="Acz-Og-sSK">
+            <objects>
+                <viewController id="mCo-ee-gdO" customClass="AppViewController" customModule="camaraPrub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g77-xW-85l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="hdd-1g-8nY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suG-sa-IPI">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
+                                        <state key="normal" title="Acta"/>
+                                        <connections>
+                                            <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="cxB-LO-Guh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emh-pY-Ta5">
+                                        <rect key="frame" x="153.5" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Ine"/>
+                                        <connections>
+                                            <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="GtZ-AZ-lOK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qej-y4-YSc">
+                                        <rect key="frame" x="307.5" y="0.0" width="106.5" height="30"/>
+                                        <state key="normal" title="Pasaporte"/>
+                                        <connections>
+                                            <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="KFS-eV-l3S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fjQ-Ol-z6e"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wRf-Gz-hUA">
+                                <rect key="frame" x="16" y="82" width="382" height="770"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wRf-Gz-hUA" firstAttribute="top" secondItem="hdd-1g-8nY" secondAttribute="bottom" constant="8" id="0QK-ds-uq2"/>
+                            <constraint firstItem="hdd-1g-8nY" firstAttribute="leading" secondItem="EME-xl-Bkd" secondAttribute="leading" id="43Y-yx-yq9"/>
+                            <constraint firstItem="wRf-Gz-hUA" firstAttribute="leading" secondItem="EME-xl-Bkd" secondAttribute="leading" constant="16" id="OjP-HR-XF1"/>
+                            <constraint firstItem="hdd-1g-8nY" firstAttribute="top" secondItem="EME-xl-Bkd" secondAttribute="top" id="bT9-2s-U2w"/>
+                            <constraint firstItem="EME-xl-Bkd" firstAttribute="trailing" secondItem="hdd-1g-8nY" secondAttribute="trailing" id="byB-5X-brK"/>
+                            <constraint firstItem="EME-xl-Bkd" firstAttribute="bottom" secondItem="wRf-Gz-hUA" secondAttribute="bottom" constant="10" id="fvv-c8-j2u"/>
+                            <constraint firstItem="EME-xl-Bkd" firstAttribute="trailing" secondItem="wRf-Gz-hUA" secondAttribute="trailing" constant="16" id="i8o-mb-3pA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EME-xl-Bkd"/>
+                    </view>
+                    <connections>
+                        <outlet property="croppedAutoImage" destination="wRf-Gz-hUA" id="Z7Y-JH-AyW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DoF-cP-yGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2693" y="343"/>
+        </scene>
+    </scenes>
+</document>
