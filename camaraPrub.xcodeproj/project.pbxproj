@@ -18,7 +18,6 @@
 		2787B2C9247F31E2006064B6 /* VisionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2C8247F31E2006064B6 /* VisionKit.framework */; };
 		27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A85D2E2487055400A95F04 /* Assets.xcassets */; };
 		27B6766C2492956400B402EF /* AppViewStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B6766B2492956400B402EF /* AppViewStory.storyboard */; };
-		27EBB8C924885F4000C9BE02 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBB8C824885F4000C9BE02 /* ImageViewController.swift */; };
 		27EBB8CB2488610100C9BE02 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBB8CA2488610100C9BE02 /* Document.swift */; };
 		29D14F222488675B00C63DB7 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D14F212488675B00C63DB7 /* AppViewController.swift */; };
 		29D14F24248869D400C63DB7 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D14F23248869D400C63DB7 /* DocumentViewController.swift */; };
@@ -38,7 +37,6 @@
 		2787B2C8247F31E2006064B6 /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = System/Library/Frameworks/VisionKit.framework; sourceTree = SDKROOT; };
 		27A85D2E2487055400A95F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27B6766B2492956400B402EF /* AppViewStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppViewStory.storyboard; sourceTree = "<group>"; };
-		27EBB8C824885F4000C9BE02 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		27EBB8CA2488610100C9BE02 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		29D14F212488675B00C63DB7 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		29D14F23248869D400C63DB7 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				27B6766B2492956400B402EF /* AppViewStory.storyboard */,
 				276ED531247E0C4C008675AD /* LaunchScreen.storyboard */,
 				276ED534247E0C4C008675AD /* Info.plist */,
-				27EBB8C824885F4000C9BE02 /* ImageViewController.swift */,
 			);
 			path = camaraPrub;
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 				27EBB8CB2488610100C9BE02 /* Document.swift in Sources */,
 				276ED527247E0C48008675AD /* AppDelegate.swift in Sources */,
 				29D14F24248869D400C63DB7 /* DocumentViewController.swift in Sources */,
-				27EBB8C924885F4000C9BE02 /* ImageViewController.swift in Sources */,
 				29D14F222488675B00C63DB7 /* AppViewController.swift in Sources */,
 				276ED529247E0C48008675AD /* SceneDelegate.swift in Sources */,
 				27367D9424941EB700C2BF60 /* ImageUtilities.swift in Sources */,
