@@ -13,9 +13,9 @@ s.source = { :git => "https://github.com/irisgal27/Storyboard.git", :tag => "#{s
 s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
 s.exclude_files = "camaraPrub/*.plist"
-s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
  s.resource_bundles = {
-    'camaraPrub' => ['camaraPrub/**/*.{storyboard,xib}']
+    'camaraPrub' => ['camaraPrub/**/*.{storyboard,xib,xcassets}']
   }
 end
 
