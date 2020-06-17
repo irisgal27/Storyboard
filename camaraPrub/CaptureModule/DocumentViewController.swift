@@ -12,14 +12,21 @@ import AVFoundation
 import Vision
 
 
-protocol DocumentViewControllerDelegate: NSObjectProtocol {
+public protocol DocumentViewControllerDelegate: NSObjectProtocol {
 	func captureDidFinishWithDocument(_ document: Document, captureVC: DocumentViewController)
 	func captureDidCancel(captureVC: DocumentViewController)
 }
 
-class DocumentViewController: UIViewController {
-	static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentViewControllerDelegate) -> UINavigationController {
-		let vc = UIStoryboard(name: "Main", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController
+open class DocumentViewController: UIViewController {
+	public static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentViewControllerDelegate) -> UINavigationController {
+		/*let vc = UIStoryboard(name: "DocumentCamara", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController*/
+		let podBundle = Bundle(for: DocumentViewController.self)
+		let bundleURL = podBundle.url(forResource: "DocumentViewController", withExtension: "bundle")
+		let bundlee = Bundle(url: bundleURL!)
+		
+		let storyboard = UIStoryboard(name: "Main", bundle: bundlee)
+		let vc = storyboard.instantiateViewController(identifier: "captureVC") as! DocumentViewController
+		
 		vc.documentType = proccessId
 		vc.doc = Document(documentType: proccessId)
 
@@ -60,7 +67,7 @@ class DocumentViewController: UIViewController {
 
 //MARK: - View Life Cycle
 extension DocumentViewController {
-	override func viewDidLoad() {
+	open override func viewDidLoad() {
 		super.viewDidLoad()
 		switch documentType {
 			case .acta:
@@ -79,10 +86,10 @@ extension DocumentViewController {
 		}
     configureSession()
 	}
-	override func viewDidAppear(_ animated: Bool) {
+	open override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(true)
 	}
-  override func viewWillAppear(_ animated: Bool) {
+	open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(true, animated: false)
     startStream()
@@ -277,7 +284,7 @@ extension DocumentViewController {
 
 
 extension DocumentViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
-	func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+	public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 		guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
 			return
 		}
@@ -313,7 +320,7 @@ extension CGPoint{
 }
 
 extension DocumentViewController: AVCapturePhotoCaptureDelegate {
-	func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+	public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
 		let imageData = photo.fileDataRepresentation()
 		if let data = imageData, let img = UIImage(data: data) {
 			guard let buffer = lastBuffer ,let obbservation = lastObservation else {
@@ -356,7 +363,7 @@ extension DocumentViewController: AVCapturePhotoCaptureDelegate {
 		}
 	}
 	
-	func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
+	public func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
 	}
 }
 

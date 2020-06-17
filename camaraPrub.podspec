@@ -14,5 +14,8 @@ s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
 s.exclude_files = "camaraPrub/*.plist"
 s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
+ s.resource_bundles = {
+    'camaraPrub' => ['camaraPrub/**/*.{storyboard,xib}']
+  }
 end
 

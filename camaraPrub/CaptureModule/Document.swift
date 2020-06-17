@@ -8,10 +8,10 @@
 
 import UIKit
 
-typealias ProccessId = Document.DocumentType
+public typealias ProccessId = Document.DocumentType
 
-struct Document {
-	enum DocumentType {
+public struct Document {
+	public enum DocumentType {
 		case acta
 		case passport
 		case ineFront
@@ -21,17 +21,17 @@ struct Document {
 	var image : UIImage?
 	var cgImage : CGImage?
 	var croppedImage: UIImage?
-	var compressed : Data?
+	public var compressed : Data?
    var observation : CGRect?
 
-	var proccess: DocumentProccess?
+	public var proccess: DocumentProccess?
 }
 
-struct DocumentProccess: Codable {
+public struct DocumentProccess: Codable {
 	let success: Bool
 }
 
-struct Client {
+public struct Client {
 	let id: String
 	let accountNumber: String
 	let curp: String

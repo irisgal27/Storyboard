@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		2712E0032491251500A5CDBE /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712E0022491251500A5CDBE /* CropViewController.swift */; };
 		27367D9424941EB700C2BF60 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27367D9324941EB700C2BF60 /* ImageUtilities.swift */; };
-		276ED527247E0C48008675AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ED526247E0C48008675AD /* AppDelegate.swift */; };
-		276ED529247E0C48008675AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ED528247E0C48008675AD /* SceneDelegate.swift */; };
-		276ED52E247E0C49008675AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED52C247E0C49008675AD /* Main.storyboard */; };
+		276ED52E247E0C49008675AD /* DocumentCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED52C247E0C49008675AD /* DocumentCamera.storyboard */; };
 		276ED533247E0C4C008675AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED531247E0C4C008675AD /* LaunchScreen.storyboard */; };
 		2787B2A5247EFA1A006064B6 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A4247EFA1A006064B6 /* Vision.framework */; };
 		2787B2A7247F28B9006064B6 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A6247F28B9006064B6 /* CoreML.framework */; };
@@ -27,9 +25,7 @@
 		2712E0022491251500A5CDBE /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
 		27367D9324941EB700C2BF60 /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
 		276ED523247E0C48008675AD /* camaraPrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camaraPrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		276ED526247E0C48008675AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		276ED528247E0C48008675AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		276ED52D247E0C49008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		276ED52D247E0C49008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DocumentCamera.storyboard; sourceTree = "<group>"; };
 		276ED532247E0C4C008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		276ED534247E0C4C008675AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2787B2A4247EFA1A006064B6 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
@@ -76,12 +72,10 @@
 		276ED525247E0C48008675AD /* camaraPrub */ = {
 			isa = PBXGroup;
 			children = (
-				276ED526247E0C48008675AD /* AppDelegate.swift */,
-				276ED528247E0C48008675AD /* SceneDelegate.swift */,
 				29D14F2524887AD300C63DB7 /* CaptureModule */,
 				29D14F212488675B00C63DB7 /* AppViewController.swift */,
 				27A85D2E2487055400A95F04 /* Assets.xcassets */,
-				276ED52C247E0C49008675AD /* Main.storyboard */,
+				276ED52C247E0C49008675AD /* DocumentCamera.storyboard */,
 				27B6766B2492956400B402EF /* AppViewStory.storyboard */,
 				276ED531247E0C4C008675AD /* LaunchScreen.storyboard */,
 				276ED534247E0C4C008675AD /* Info.plist */,
@@ -171,7 +165,7 @@
 				276ED533247E0C4C008675AD /* LaunchScreen.storyboard in Resources */,
 				27B6766C2492956400B402EF /* AppViewStory.storyboard in Resources */,
 				27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */,
-				276ED52E247E0C49008675AD /* Main.storyboard in Resources */,
+				276ED52E247E0C49008675AD /* DocumentCamera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27EBB8CB2488610100C9BE02 /* Document.swift in Sources */,
-				276ED527247E0C48008675AD /* AppDelegate.swift in Sources */,
 				29D14F24248869D400C63DB7 /* DocumentViewController.swift in Sources */,
 				29D14F222488675B00C63DB7 /* AppViewController.swift in Sources */,
-				276ED529247E0C48008675AD /* SceneDelegate.swift in Sources */,
 				27367D9424941EB700C2BF60 /* ImageUtilities.swift in Sources */,
 				2712E0032491251500A5CDBE /* CropViewController.swift in Sources */,
 			);
@@ -195,12 +187,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		276ED52C247E0C49008675AD /* Main.storyboard */ = {
+		276ED52C247E0C49008675AD /* DocumentCamera.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				276ED52D247E0C49008675AD /* Base */,
 			);
-			name = Main.storyboard;
+			name = DocumentCamera.storyboard;
 			sourceTree = "<group>";
 		};
 		276ED531247E0C4C008675AD /* LaunchScreen.storyboard */ = {
