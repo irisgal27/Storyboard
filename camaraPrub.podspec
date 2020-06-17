@@ -13,5 +13,6 @@ s.source = { :git => "https://github.com/irisgal27/Storyboard.git", :tag => "#{s
 s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
 s.resources = "camaraPrub/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.exclude_files = "camaraPrub/*.plist"
 end
 
