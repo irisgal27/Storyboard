@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '11.0'
 s.name = "camaraPrub"
-s.summary = "A short description of camaraPrub."
+s.summary = "Pod para tomar fotos de documentos de manera automatica"
 s.requires_arc = true
 s.version = "0.0.1"
 s.license = { :type => "MIT", :file => "LICENSE" }
