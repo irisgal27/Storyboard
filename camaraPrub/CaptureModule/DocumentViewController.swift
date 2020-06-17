@@ -19,10 +19,12 @@ public protocol DocumentViewControllerDelegate: NSObjectProtocol {
 
 open class DocumentViewController: UIViewController {
 	public static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentViewControllerDelegate) -> UINavigationController {
-		/*let vc = UIStoryboard(name: "DocumentCamara", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController*/
-		let podBundle = Bundle(for: DocumentViewController.self)
-		let storyboard = UIStoryboard(name: "DocumentCamera", bundle: Bundle(for: DocumentViewController.self))
-		let vc = storyboard.instantiateInitialViewController() as! DocumentViewController
+		//let vc = UIStoryboard(name: "DocumentCamara", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController
+		let bundle = Bundle(for: DocumentViewController.self)
+		//let path = bundle.path(forResource: "DocumentCamera", ofType: "storyboard")
+		let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: bundle)
+		let vc = storyboardBundle.instantiateViewController(identifier: "captureVC") as! DocumentViewController
+		
 		
 		vc.documentType = proccessId
 		vc.doc = Document(documentType: proccessId)
