@@ -12,7 +12,7 @@ s.homepage = "https://github.com/irisgal27/Storyboard"
 s.source = { :git => "https://github.com/irisgal27/Storyboard.git", :tag => "#{s.version}"}
 s.framework = "UIKit","Vision"
 s.source_files = "camaraPrub/**/*.{swift}"
-s.resources = "camaraPrub/**/*.{png,jpeg,jpg,lproj,storyboard,xib,xcassets}"
+s.resources = ["camaraPrub/**/*.{png,jpeg,jpg,lproj,storyboard,xib,xcassets}","camaraPrub/Resources/DocumentCamera.storyboard"]
 s.resource_bundles = {
     'camaraPrub' => ['camaraPrub/Assets/**/*.xcassets', 'camaraPrub/**/*.{lproj,storyboard}']
   }
