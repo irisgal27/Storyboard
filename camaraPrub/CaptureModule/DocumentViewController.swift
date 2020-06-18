@@ -67,17 +67,17 @@ extension DocumentViewController {
 		let bundle = Bundle(for: DocumentViewController.self)
 		switch documentType {
 			case .acta:
-				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)//UIImage(named: "focusActaFrame")
+				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
 				instructionsLbl.text = "Captura el acta de nacimiento de tu hijo/a"
 			case .ineFront:
-				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
+				imageLimit.image = UIImage(named: "focusIdFrame", in: bundle, with: nil)
 				instructionsLbl.text = "Captura tu identificación oficial"
 			
 			case .ineBack:
-				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
+				imageLimit.image = UIImage(named: "focusIdFrame", in: bundle, with: nil)
 				instructionsLbl.text = "Captura la parte trasera de tu identificación oficial"
 			case .passport:
-				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
+				imageLimit.image = UIImage(named: "focusPassport", in: bundle, with: nil)
 				instructionsLbl.text = "Captura tu identificación oficial"
 		}
     configureSession()
