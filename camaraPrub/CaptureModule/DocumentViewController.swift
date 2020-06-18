@@ -119,7 +119,6 @@ extension DocumentViewController {
     self.session.addOutput(deviceOutput)
     session.addOutput(stillImage)
     session.sessionPreset = .photo
-
     imageLayer = AVCaptureVideoPreviewLayer(session: session)
   }
 	func startStream() {

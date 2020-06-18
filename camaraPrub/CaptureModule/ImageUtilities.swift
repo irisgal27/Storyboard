@@ -32,7 +32,6 @@ extension UIImage{
 				return image
 			}
 		}
-	
 		return Data()
 	}
 }

@@ -29,7 +29,6 @@ public struct Document {
 public struct DocumentProccess: Codable {
 	let success: Bool
 }
-
 public struct Client {
 	let id: String
 	let accountNumber: String

@@ -13,7 +13,6 @@ class AppViewController: UIViewController {
 	@IBOutlet weak var croppedAutoImage: UIImageView!
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 	}
 	
 	@IBAction func pickImage(_ sender: UIButton) {

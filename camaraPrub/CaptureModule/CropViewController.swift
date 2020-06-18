@@ -10,7 +10,6 @@ import UIKit
 
 protocol CropViewControllerDelegate {
 	func documentDidCropped(_ document: Document)
-
 }
 
 class CropViewController: UIViewController, UIGestureRecognizerDelegate{
