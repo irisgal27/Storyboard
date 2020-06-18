@@ -20,9 +20,20 @@ public protocol DocumentViewControllerDelegate: NSObjectProtocol {
 open class DocumentViewController: UIViewController {
 	public static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentViewControllerDelegate) -> UINavigationController {
 		//let vc = UIStoryboard(name: "DocumentCamara", bundle: Bundle(identifier: "com.documentCapture")).instantiateViewController(identifier: "captureVC") as! DocumentViewController
-		let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: Bundle(for: DocumentViewController.self))
-		let vc = storyboardBundle.instantiateViewController(identifier: "captureVC") as! DocumentViewController
+		//let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: Bundle(for: DocumentViewController.self))
+		//let vc = storyboardBundle.instantiateViewController(identifier: "captureVC") as! DocumentViewController
+		let myBundle = Bundle(for: self.self)
+		guard let resourceBundleURL = myBundle.url(
+			forResource: "camaraPrub", withExtension: "bundle")
+			else { fatalError("MySDK.bundle not found!") }
 		
+		// Create a bundle object for the bundle found at that URL.
+		guard let resourceBundle = Bundle(url: resourceBundleURL)
+			else { fatalError("Cannot access MySDK.bundle!") }
+		
+		// Load your resources from this bundle.
+		let storyBoard = UIStoryboard(name: "DocumentCamera", bundle: resourceBundle)
+		let vc = storyBoard.instantiateViewController(identifier: "DocumentViewController") as! DocumentViewController
 		vc.documentType = proccessId
 		vc.doc = Document(documentType: proccessId)
 

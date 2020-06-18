@@ -10,7 +10,7 @@
         <!--Document View Controller-->
         <scene sceneID="RKL-lz-JC1">
             <objects>
-                <viewController storyboardIdentifier="captureVC" interfaceStyle="light" id="7xw-LW-Ghe" customClass="DocumentViewController" customModule="camaraPrub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DocumentViewController" interfaceStyle="light" id="7xw-LW-Ghe" customClass="DocumentViewController" customModule="camaraPrub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3q-Fs-8Pe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
