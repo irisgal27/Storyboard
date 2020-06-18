@@ -23,7 +23,6 @@ public struct Document {
 	var croppedImage: UIImage?
 	public var compressed : Data?
    var observation : CGRect?
-
 	public var proccess: DocumentProccess?
 }
 

@@ -116,19 +116,19 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomLeft" translatesAutoresizingMaskIntoConstraints="NO" id="V86-40-78w">
-                                <rect key="frame" x="41" y="415" width="45" height="45"/>
+                                <rect key="frame" x="66" y="424" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topRight" translatesAutoresizingMaskIntoConstraints="NO" id="F3b-Lr-8E7">
-                                <rect key="frame" x="279" y="245" width="45" height="45"/>
+                                <rect key="frame" x="279" y="245" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Zvy-hw-a0g">
-                                <rect key="frame" x="41" y="245" width="45" height="45"/>
+                                <rect key="frame" x="66" y="245" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomRight" translatesAutoresizingMaskIntoConstraints="NO" id="yWe-Vd-FBc">
-                                <rect key="frame" x="279" y="415" width="45" height="45"/>
+                                <rect key="frame" x="279" y="424" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -142,7 +142,7 @@
                         <viewLayoutGuide key="safeArea" id="shH-1T-ySl"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zsj-Gw-xUp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ySW-b0-IOv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ySW-b0-IOv">
                             <connections>
                                 <action selector="cutImage:" destination="IDe-uq-xaB" id="rYM-Nl-APA"/>
                             </connections>

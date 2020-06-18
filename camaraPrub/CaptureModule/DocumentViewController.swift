@@ -188,16 +188,8 @@ extension DocumentViewController {
 		//print(outline.frame)
 		outline.borderWidth = 3
 		outline.borderColor = UIColor.blue.cgColor
-		//print("outlone: ----------    ",outline.frame)
-    // imageLimit.layer.addSublayer(outline)
-
-		
-		//print("Box ratio: \(box.boundingBox.size.height / box.boundingBox.size.width), aspectRatio: \(aspectRatio)")
-		//coincidenceCounter += 1
 		
 		if outerREct.contains(dato) {
-			//coincidenceCounter += 1
-    //  print("si esta en el cuadro")
     }
 
 		if aspectRatio > 1.1 && aspectRatio < 1.7 {
@@ -207,54 +199,14 @@ extension DocumentViewController {
 			}
 			coincidenceCounter += 1
 
-			//coincidenceCounter += 1
-			
-			//print("Cupo en el aspect")
-			//let innerRect = CGRect(x: outerREct.origin.x + 80, y: outerREct.origin.y + 80, width: outerREct.size.width - 160, height: outerREct.size.height - 160)
-			
 		}
 		else if aspectRatio > 0.66 && aspectRatio < 0.91 {
-			//print("Es probable que  una un acta")
-     // print("apectRatio----------",aspectRatio)
-			//coincidenceCounter += 1
-			
-			//print(viewForTakingPicture.frame)
-			//if(viewForTakingPicture.frame.contains(outline.frame)){
-			//	print("Contains-----------------------------------Acta en posicion")
 				coincidenceCounter += 1
-				//print("Esta dentro ")
-				//let innerRect = CGRect(x: outerREct.origin.x + 80, y: outerREct.origin.y + 80, width: outerREct.size.width - 160, height: outerREct.size.height - 160)
-			//}
 		}
 		else {
 			//coincidenceCounter = 0
 		}
 	}
-	
-/*	func coincidenceUpdated() {
-		print(coincidenceCounter)
-		if coincidenceCounter == 5 {
-			session.stopRunning()
-			guard let buffer = lastBuffer/*, let observation = lastObservation*/ else {
-				return
-			}
-			DispatchQueue.main.async {
-				let ciImage = CIImage(cvImageBuffer: buffer).oriented(CGImagePropertyOrientation.right)
-				let output = UIImage(ciImage: ciImage)
-				self.doc?.cgImage = ciImage.getCgImage()
-				self.doc?.image = output
-				self.doc?.observation = self.observationFrame
-				self.doc?.proccess = DocumentProccess(success: true)
-				
-				
-				let nuevaImagenShow = self.storyboard?.instantiateViewController(withIdentifier:"cropView") as! CropViewController
-				nuevaImagenShow.document = self.doc
-				nuevaImagenShow.delegate = self
-				self.navigationController?.pushViewController(nuevaImagenShow, animated: true)
-			}
-			
-		}
-	}*/
 }
 
 //corta Automaticamente esta función no borrar
@@ -270,8 +222,6 @@ extension DocumentViewController {
 										kCVPixelBufferHeightKey as String: 160]
 			settings.previewPhotoFormat = previewFormat
 			stillImage.capturePhoto(with: settings, delegate: self)
-		
-			
 			//session.stopRunning()
 			
 		}
@@ -322,27 +272,11 @@ extension DocumentViewController: AVCapturePhotoCaptureDelegate {
 			guard let buffer = lastBuffer ,let obbservation = lastObservation else {
 				return
 			}
-			//print("buffer-------------------",buffer)
-			//print("CIIMAGE-------------------",ciImage)
-			//doc?.image = UIImage(ciImage: ciImage)
-			//let img = UIImage(ciImage: ciImage)
-			//let dato = Document(image: img, proccess: DocumentProccess(success: true))
-			
+
 			DispatchQueue.main.async {
 				
 				var ciImage = CIImage(data: data)!.oriented(CGImagePropertyOrientation.right)//CIImage(cvImageBuffer: buffer)
-				/*var topLeft = obbservation.topLeft.scaled(size: ciImage.extent.size)
-				var topRight = obbservation.topRight.scaled(size: ciImage.extent.size)
-				var bottomLeft = obbservation.bottomLeft.scaled(size: ciImage.extent.size)
-				var bottomRight = obbservation.bottomRight.scaled(size: ciImage.extent.size)
-				
-				print("top",topLeft,topRight,bottomLeft,bottomRight)
-				ciImage = ciImage.applyingFilter("CIPerspectiveCorrection", parameters: [
-					"inputTopLeft": CIVector(cgPoint: topLeft),
-					"inputTopRight": CIVector(cgPoint: topRight),
-					"inputBottomLeft": CIVector(cgPoint: bottomLeft),
-					"inputBottomRight": CIVector(cgPoint: bottomRight),
-				])*/
+	
 				let context = CIContext()
 				let cgImage = context.createCGImage(ciImage, from: ciImage.extent)
 				let output = UIImage(ciImage: ciImage)
