@@ -66,7 +66,6 @@ class CropViewController: UIViewController, UIGestureRecognizerDelegate{
           workView = topRight
       }
       case .changed:
-        
         if let view = workView {
           let xfinal = (touch.x - puntoInicio.x)
           let yfinal = (touch.y - puntoInicio.y)

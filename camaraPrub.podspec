@@ -5,7 +5,7 @@ s.name = "camaraPrub"
 s.summary = "Pod para tomar fotos de documentos de manera automática"
 s.requires_arc = true
 s.swift_version = '5.0'
-s.version = "0.2.0"
+s.version = "0.3.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "fractanet" => "irisgalgal@outlook.com" }
 s.homepage = "https://github.com/irisgal27/Storyboard"
