@@ -16,6 +16,8 @@ public struct Document {
 		case passport
 		case ineFront
 		case ineBack
+		case AnyDocument(documentLbl: String, detailLbl: String)
+		case Custom(minAspecRatio: Float, maxApectRatio: Float, documentLbl: String, detailLbl:String)
 	}
 	let documentType: DocumentType
 	var image : UIImage?

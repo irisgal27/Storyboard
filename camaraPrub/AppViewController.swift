@@ -18,12 +18,16 @@ class AppViewController: UIViewController {
 	@IBAction func pickImage(_ sender: UIButton) {
 		var docType: ProccessId
 		switch sender.tag {
-			case 0:
-				docType = .acta
-			case 1:
+			case 0:  //Seleccionar el que tipo de documento
+				docType = .AnyDocument(documentLbl: "", detailLbl: " ")
+			/*case 1:
 				docType = .ineFront
 			case 2:
 				docType = .passport
+			case 3:
+				docType = .acta
+			case 4:
+				docType = .Custom(minAspecRatio: 0.4, maxApectRatio: 1.0, documentLbl: "Este es nuevo", detailLbl: "Tienes algo nuevo")*/
 			default:
 				docType = .acta
 				print("Nada")

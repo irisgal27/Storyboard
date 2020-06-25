@@ -19,24 +19,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suG-sa-IPI">
-                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
-                                        <state key="normal" title="Acta"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <state key="normal" title="Documento"/>
                                         <connections>
                                             <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="cxB-LO-Guh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emh-pY-Ta5">
-                                        <rect key="frame" x="153.5" y="0.0" width="107" height="30"/>
-                                        <state key="normal" title="Ine"/>
-                                        <connections>
-                                            <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="GtZ-AZ-lOK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qej-y4-YSc">
-                                        <rect key="frame" x="307.5" y="0.0" width="106.5" height="30"/>
-                                        <state key="normal" title="Pasaporte"/>
-                                        <connections>
-                                            <action selector="pickImage:" destination="mCo-ee-gdO" eventType="touchUpInside" id="KFS-eV-l3S"/>
                                         </connections>
                                     </button>
                                 </subviews>

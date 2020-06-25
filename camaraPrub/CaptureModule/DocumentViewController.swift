@@ -79,6 +79,16 @@ extension DocumentViewController {
 			case .passport:
 				imageLimit.image = UIImage(named: "focusPassport", in: bundle, with: nil)
 				instructionsLbl.text = "Captura tu identificación oficial"
+			case .AnyDocument(documentLbl: let documentLbl, detailLbl: let detailLbl):
+				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
+				instructionsLbl.text = "\(documentLbl)"
+				self.detailLbl.text = "\(detailLbl)"
+			case .Custom(minAspecRatio: let _, maxApectRatio: let _, documentLbl: let documentLbl, detailLbl: let detailLbl):
+				imageLimit.image = UIImage(named: "focusActaFrame", in: bundle, with: nil)
+				instructionsLbl.text = "\(documentLbl)"
+				self.detailLbl.text = "\(detailLbl)"
+				
+			
 		}
     configureSession()
 	}
@@ -154,6 +164,14 @@ extension DocumentViewController {
 				minimumAspectRatio = 0.62
 				maximumAspectRatio = 0.82
 				orientation = .right
+			case .AnyDocument(documentLbl: let documentLbl, detailLbl: let detailLbl):
+				minimumAspectRatio = 0.50
+				maximumAspectRatio = 1
+				orientation = .up
+			case .Custom(minAspecRatio: let minAspecRatio, maxApectRatio: let maxApectRatio, documentLbl: let documentLbl, detailLbl: let detailLbl):
+				minimumAspectRatio = minAspecRatio
+				maximumAspectRatio = maxApectRatio
+				orientation = .up
 		}
 		rectDetectRequest.maximumObservations = 1
 		rectDetectRequest.minimumAspectRatio = minimumAspectRatio
@@ -208,8 +226,6 @@ extension DocumentViewController {
 		}
 	}
 }
-
-//corta Automaticamente esta función no borrar
 
 extension DocumentViewController {
 	func coincidenceUpdated() {
