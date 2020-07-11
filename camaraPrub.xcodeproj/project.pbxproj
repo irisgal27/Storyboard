@@ -49,9 +49,6 @@
 		276ED523247E0C48008675AD /* camaraPrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camaraPrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276ED532247E0C4C008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		276ED534247E0C4C008675AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2787B2A4247EFA1A006064B6 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
-		2787B2A6247F28B9006064B6 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
-		2787B2C8247F31E2006064B6 /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = System/Library/Frameworks/VisionKit.framework; sourceTree = SDKROOT; };
 		27A85D2E2487055400A95F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,9 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				270663D024B944C000BB0C2A /* AVFoundation.framework */,
-				2787B2C8247F31E2006064B6 /* VisionKit.framework */,
-				2787B2A6247F28B9006064B6 /* CoreML.framework */,
-				2787B2A4247EFA1A006064B6 /* Vision.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
