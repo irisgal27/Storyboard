@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270663D224B944C200BB0C2A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270663D024B944C000BB0C2A /* AVFoundation.framework */; };
 		273596B624B93A1D00CA72DF /* AppViewStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B324B93A1D00CA72DF /* AppViewStory.storyboard */; };
 		273596B724B93A1D00CA72DF /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596B424B93A1D00CA72DF /* AppViewController.swift */; };
 		273596B824B93A1D00CA72DF /* DocumentCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */; };
@@ -24,13 +25,11 @@
 		273596D624B93A9A00CA72DF /* DocumentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596D124B93A9A00CA72DF /* DocumentModels.swift */; };
 		273596D724B93A9A00CA72DF /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596D224B93A9A00CA72DF /* DocumentViewController.swift */; };
 		276ED533247E0C4C008675AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED531247E0C4C008675AD /* LaunchScreen.storyboard */; };
-		2787B2A5247EFA1A006064B6 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A4247EFA1A006064B6 /* Vision.framework */; };
-		2787B2A7247F28B9006064B6 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A6247F28B9006064B6 /* CoreML.framework */; };
-		2787B2C9247F31E2006064B6 /* VisionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2C8247F31E2006064B6 /* VisionKit.framework */; };
 		27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A85D2E2487055400A95F04 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270663D024B944C000BB0C2A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		273596B324B93A1D00CA72DF /* AppViewStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppViewStory.storyboard; sourceTree = "<group>"; };
 		273596B424B93A1D00CA72DF /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentCamera.storyboard; sourceTree = "<group>"; };
@@ -61,9 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2787B2A7247F28B9006064B6 /* CoreML.framework in Frameworks */,
-				2787B2A5247EFA1A006064B6 /* Vision.framework in Frameworks */,
-				2787B2C9247F31E2006064B6 /* VisionKit.framework in Frameworks */,
+				270663D224B944C200BB0C2A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +153,7 @@
 		2787B2A3247EFA1A006064B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				270663D024B944C000BB0C2A /* AVFoundation.framework */,
 				2787B2C8247F31E2006064B6 /* VisionKit.framework */,
 				2787B2A6247F28B9006064B6 /* CoreML.framework */,
 				2787B2A4247EFA1A006064B6 /* Vision.framework */,

@@ -24,9 +24,6 @@ open class DocumentViewController: UIViewController,DocumentViewControllerDelega
 	func croppedFinished() {
 		router?.finishProcess()
 	}
-	
-	
-
   var interactor: DocumentBusinessLogic?
   var router: (NSObjectProtocol & DocumentRoutingLogic & DocumentDataPassing)?
 	@IBOutlet weak var viewForTakingPicture: UIImageView!
