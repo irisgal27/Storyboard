@@ -1,6 +1,6 @@
 //
 //  ImageUtilities.swift
-//  camaraPrub
+//  MotorImages
 //
 //  Created by iris on 12/06/20.
 //  Copyright © 2020 irisdarka. All rights reserved.
@@ -35,3 +35,12 @@ extension UIImage{
 		return Data()
 	}
 }
+extension UIImageView{
+	func makeRoundCorner(){
+		self.layer.cornerRadius = self.frame.width/2
+		self.layer.borderWidth = 2
+		self.layer.borderColor = UIColor(red: 1/255, green: 129/255, blue: 196/255, alpha: 1).cgColor
+		self.backgroundColor = UIColor(cgColor: CGColor(srgbRed: 255, green: 255, blue: 255, alpha: 0.3))
+	}
+}
+

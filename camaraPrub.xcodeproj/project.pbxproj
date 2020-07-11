@@ -7,35 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2712E0032491251500A5CDBE /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712E0022491251500A5CDBE /* CropViewController.swift */; };
-		27367D9424941EB700C2BF60 /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27367D9324941EB700C2BF60 /* ImageUtilities.swift */; };
-		276ED52E247E0C49008675AD /* DocumentCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED52C247E0C49008675AD /* DocumentCamera.storyboard */; };
+		273596B624B93A1D00CA72DF /* AppViewStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B324B93A1D00CA72DF /* AppViewStory.storyboard */; };
+		273596B724B93A1D00CA72DF /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596B424B93A1D00CA72DF /* AppViewController.swift */; };
+		273596B824B93A1D00CA72DF /* DocumentCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */; };
+		273596BD24B93A5A00CA72DF /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596BC24B93A5A00CA72DF /* ImageUtilities.swift */; };
+		273596BF24B93A6500CA72DF /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596BE24B93A6500CA72DF /* DocumentModel.swift */; };
+		273596C724B93A7F00CA72DF /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C124B93A7F00CA72DF /* CropViewController.swift */; };
+		273596C824B93A7F00CA72DF /* CropRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C224B93A7F00CA72DF /* CropRouter.swift */; };
+		273596C924B93A7F00CA72DF /* CropModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C324B93A7F00CA72DF /* CropModels.swift */; };
+		273596CA24B93A7F00CA72DF /* CropInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C424B93A7F00CA72DF /* CropInteractor.swift */; };
+		273596CB24B93A7F00CA72DF /* CropExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C524B93A7F00CA72DF /* CropExtensionViewController.swift */; };
+		273596CC24B93A7F00CA72DF /* CropPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596C624B93A7F00CA72DF /* CropPresenter.swift */; };
+		273596D324B93A9A00CA72DF /* DocumentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596CE24B93A9900CA72DF /* DocumentInteractor.swift */; };
+		273596D424B93A9A00CA72DF /* DocumentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596CF24B93A9900CA72DF /* DocumentRouter.swift */; };
+		273596D524B93A9A00CA72DF /* DocumentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596D024B93A9900CA72DF /* DocumentPresenter.swift */; };
+		273596D624B93A9A00CA72DF /* DocumentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596D124B93A9A00CA72DF /* DocumentModels.swift */; };
+		273596D724B93A9A00CA72DF /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596D224B93A9A00CA72DF /* DocumentViewController.swift */; };
 		276ED533247E0C4C008675AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276ED531247E0C4C008675AD /* LaunchScreen.storyboard */; };
 		2787B2A5247EFA1A006064B6 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A4247EFA1A006064B6 /* Vision.framework */; };
 		2787B2A7247F28B9006064B6 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2A6247F28B9006064B6 /* CoreML.framework */; };
 		2787B2C9247F31E2006064B6 /* VisionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787B2C8247F31E2006064B6 /* VisionKit.framework */; };
 		27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A85D2E2487055400A95F04 /* Assets.xcassets */; };
-		27B6766C2492956400B402EF /* AppViewStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B6766B2492956400B402EF /* AppViewStory.storyboard */; };
-		27EBB8CB2488610100C9BE02 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBB8CA2488610100C9BE02 /* Document.swift */; };
-		29D14F222488675B00C63DB7 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D14F212488675B00C63DB7 /* AppViewController.swift */; };
-		29D14F24248869D400C63DB7 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D14F23248869D400C63DB7 /* DocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2712E0022491251500A5CDBE /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
-		27367D9324941EB700C2BF60 /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
+		273596B324B93A1D00CA72DF /* AppViewStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppViewStory.storyboard; sourceTree = "<group>"; };
+		273596B424B93A1D00CA72DF /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentCamera.storyboard; sourceTree = "<group>"; };
+		273596BC24B93A5A00CA72DF /* ImageUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
+		273596BE24B93A6500CA72DF /* DocumentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		273596C124B93A7F00CA72DF /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		273596C224B93A7F00CA72DF /* CropRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRouter.swift; sourceTree = "<group>"; };
+		273596C324B93A7F00CA72DF /* CropModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropModels.swift; sourceTree = "<group>"; };
+		273596C424B93A7F00CA72DF /* CropInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropInteractor.swift; sourceTree = "<group>"; };
+		273596C524B93A7F00CA72DF /* CropExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropExtensionViewController.swift; sourceTree = "<group>"; };
+		273596C624B93A7F00CA72DF /* CropPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropPresenter.swift; sourceTree = "<group>"; };
+		273596CE24B93A9900CA72DF /* DocumentInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentInteractor.swift; sourceTree = "<group>"; };
+		273596CF24B93A9900CA72DF /* DocumentRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentRouter.swift; sourceTree = "<group>"; };
+		273596D024B93A9900CA72DF /* DocumentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPresenter.swift; sourceTree = "<group>"; };
+		273596D124B93A9A00CA72DF /* DocumentModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentModels.swift; sourceTree = "<group>"; };
+		273596D224B93A9A00CA72DF /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		276ED523247E0C48008675AD /* camaraPrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camaraPrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		276ED52D247E0C49008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DocumentCamera.storyboard; sourceTree = "<group>"; };
 		276ED532247E0C4C008675AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		276ED534247E0C4C008675AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2787B2A4247EFA1A006064B6 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 		2787B2A6247F28B9006064B6 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		2787B2C8247F31E2006064B6 /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = System/Library/Frameworks/VisionKit.framework; sourceTree = SDKROOT; };
 		27A85D2E2487055400A95F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27B6766B2492956400B402EF /* AppViewStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppViewStory.storyboard; sourceTree = "<group>"; };
-		27EBB8CA2488610100C9BE02 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		29D14F212488675B00C63DB7 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		29D14F23248869D400C63DB7 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273596B924B93A3B00CA72DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				273596BC24B93A5A00CA72DF /* ImageUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		273596BA24B93A4700CA72DF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				273596BE24B93A6500CA72DF /* DocumentModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		273596BB24B93A4E00CA72DF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				273596CD24B93A8300CA72DF /* Document */,
+				273596C024B93A6E00CA72DF /* Crop */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		273596C024B93A6E00CA72DF /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+				273596C524B93A7F00CA72DF /* CropExtensionViewController.swift */,
+				273596C424B93A7F00CA72DF /* CropInteractor.swift */,
+				273596C324B93A7F00CA72DF /* CropModels.swift */,
+				273596C624B93A7F00CA72DF /* CropPresenter.swift */,
+				273596C224B93A7F00CA72DF /* CropRouter.swift */,
+				273596C124B93A7F00CA72DF /* CropViewController.swift */,
+			);
+			path = Crop;
+			sourceTree = "<group>";
+		};
+		273596CD24B93A8300CA72DF /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				273596CE24B93A9900CA72DF /* DocumentInteractor.swift */,
+				273596D124B93A9A00CA72DF /* DocumentModels.swift */,
+				273596D024B93A9900CA72DF /* DocumentPresenter.swift */,
+				273596CF24B93A9900CA72DF /* DocumentRouter.swift */,
+				273596D224B93A9A00CA72DF /* DocumentViewController.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 		276ED51A247E0C48008675AD = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +140,13 @@
 		276ED525247E0C48008675AD /* camaraPrub */ = {
 			isa = PBXGroup;
 			children = (
-				29D14F2524887AD300C63DB7 /* CaptureModule */,
-				29D14F212488675B00C63DB7 /* AppViewController.swift */,
+				273596BB24B93A4E00CA72DF /* Scenes */,
+				273596BA24B93A4700CA72DF /* Shared */,
+				273596B924B93A3B00CA72DF /* Utilities */,
 				27A85D2E2487055400A95F04 /* Assets.xcassets */,
-				276ED52C247E0C49008675AD /* DocumentCamera.storyboard */,
-				27B6766B2492956400B402EF /* AppViewStory.storyboard */,
+				273596B424B93A1D00CA72DF /* AppViewController.swift */,
+				273596B324B93A1D00CA72DF /* AppViewStory.storyboard */,
+				273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */,
 				276ED531247E0C4C008675AD /* LaunchScreen.storyboard */,
 				276ED534247E0C4C008675AD /* Info.plist */,
 			);
@@ -91,17 +161,6 @@
 				2787B2A4247EFA1A006064B6 /* Vision.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		29D14F2524887AD300C63DB7 /* CaptureModule */ = {
-			isa = PBXGroup;
-			children = (
-				27EBB8CA2488610100C9BE02 /* Document.swift */,
-				29D14F23248869D400C63DB7 /* DocumentViewController.swift */,
-				2712E0022491251500A5CDBE /* CropViewController.swift */,
-				27367D9324941EB700C2BF60 /* ImageUtilities.swift */,
-			);
-			path = CaptureModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +195,7 @@
 				TargetAttributes = {
 					276ED522247E0C48008675AD = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -162,10 +222,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273596B824B93A1D00CA72DF /* DocumentCamera.storyboard in Resources */,
 				276ED533247E0C4C008675AD /* LaunchScreen.storyboard in Resources */,
-				27B6766C2492956400B402EF /* AppViewStory.storyboard in Resources */,
+				273596B624B93A1D00CA72DF /* AppViewStory.storyboard in Resources */,
 				27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */,
-				276ED52E247E0C49008675AD /* DocumentCamera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,25 +236,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EBB8CB2488610100C9BE02 /* Document.swift in Sources */,
-				29D14F24248869D400C63DB7 /* DocumentViewController.swift in Sources */,
-				29D14F222488675B00C63DB7 /* AppViewController.swift in Sources */,
-				27367D9424941EB700C2BF60 /* ImageUtilities.swift in Sources */,
-				2712E0032491251500A5CDBE /* CropViewController.swift in Sources */,
+				273596CA24B93A7F00CA72DF /* CropInteractor.swift in Sources */,
+				273596D424B93A9A00CA72DF /* DocumentRouter.swift in Sources */,
+				273596BD24B93A5A00CA72DF /* ImageUtilities.swift in Sources */,
+				273596BF24B93A6500CA72DF /* DocumentModel.swift in Sources */,
+				273596CC24B93A7F00CA72DF /* CropPresenter.swift in Sources */,
+				273596D524B93A9A00CA72DF /* DocumentPresenter.swift in Sources */,
+				273596C724B93A7F00CA72DF /* CropViewController.swift in Sources */,
+				273596CB24B93A7F00CA72DF /* CropExtensionViewController.swift in Sources */,
+				273596C924B93A7F00CA72DF /* CropModels.swift in Sources */,
+				273596B724B93A1D00CA72DF /* AppViewController.swift in Sources */,
+				273596D624B93A9A00CA72DF /* DocumentModels.swift in Sources */,
+				273596D724B93A9A00CA72DF /* DocumentViewController.swift in Sources */,
+				273596C824B93A7F00CA72DF /* CropRouter.swift in Sources */,
+				273596D324B93A9A00CA72DF /* DocumentInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		276ED52C247E0C49008675AD /* DocumentCamera.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				276ED52D247E0C49008675AD /* Base */,
-			);
-			name = DocumentCamera.storyboard;
-			sourceTree = "<group>";
-		};
 		276ED531247E0C4C008675AD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9APW83YAV;
 				INFOPLIST_FILE = camaraPrub/Info.plist;
@@ -331,8 +393,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.camaraPrub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camaraPrub.iris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -342,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U395YUXH44;
 				INFOPLIST_FILE = camaraPrub/Info.plist;

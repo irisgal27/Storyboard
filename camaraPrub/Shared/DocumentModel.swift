@@ -12,20 +12,16 @@ public typealias ProccessId = Document.DocumentType
 
 public struct Document {
 	public enum DocumentType {
-		case acta
-		case passport
-		case ineFront
-		case ineBack
-		case AnyDocument(documentLbl: String, detailLbl: String)
-		case Custom(minAspecRatio: Float, maxApectRatio: Float, documentLbl: String, detailLbl:String)
+		case documentDefault
+		case anyDocument(documentLbl: String)
 	}
 	let documentType: DocumentType
-	var image : UIImage?
-	var cgImage : CGImage?
-	var croppedImage: UIImage?
-	public var compressed : Data?
-   var observation : CGRect?
-	public var proccess: DocumentProccess?
+	//var image : UIImage?
+	//var cgImage : CGImage?
+	//var croppedImage: UIImage?
+	public var compressed : Data? //salida
+	//var observation : CGRect?
+	//public var proccess: DocumentProccess?
 }
 
 public struct DocumentProccess: Codable {
