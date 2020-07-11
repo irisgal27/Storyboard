@@ -37,7 +37,8 @@ class DocumentRouter: NSObject, DocumentRoutingLogic, DocumentDataPassing
 
   func routeToCropView()
   {
-	let destinationCropView = UIStoryboard(name: "DocumentCamera", bundle: nil).instantiateViewController(identifier: "cropView") as CropViewController
+	let bundle = Bundle(for: DocumentViewController.self)
+	let destinationCropView = UIStoryboard(name: "DocumentCamera", bundle: bundle).instantiateViewController(identifier: "cropView") as CropViewController
 	
 		var destinationCropViewDataStore = destinationCropView.router!.dataStore!
 		passDataToCropper(source: dataStore!, destination: &destinationCropViewDataStore)

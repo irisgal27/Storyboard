@@ -5,7 +5,7 @@ s.name = "camaraPrub"
 s.summary = "Pod para tomar fotos de documentos"
 s.requires_arc = true
 s.swift_version = '5.0'
-s.version = "0.9.0"
+s.version = "1.0.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "GrupoPanxea" => "irisgalgal@outlook.com" }
 s.homepage = "https://github.com/GrupoPanxea/ios-images-lib-pod"

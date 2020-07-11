@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270663D224B944C200BB0C2A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270663D024B944C000BB0C2A /* AVFoundation.framework */; };
+		2706640E24B9596500BB0C2A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270663D024B944C000BB0C2A /* AVFoundation.framework */; };
+		2706640F24B9596500BB0C2A /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 270663D024B944C000BB0C2A /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706641324B95ACC00BB0C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706641124B95AC800BB0C2A /* UIKit.framework */; };
+		2706641424B95ACC00BB0C2A /* UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706641124B95AC800BB0C2A /* UIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		273596B624B93A1D00CA72DF /* AppViewStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B324B93A1D00CA72DF /* AppViewStory.storyboard */; };
 		273596B724B93A1D00CA72DF /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273596B424B93A1D00CA72DF /* AppViewController.swift */; };
 		273596B824B93A1D00CA72DF /* DocumentCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */; };
@@ -28,8 +31,24 @@
 		27A85D2F2487055400A95F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A85D2E2487055400A95F04 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2706641024B9596500BB0C2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2706640F24B9596500BB0C2A /* AVFoundation.framework in Embed Frameworks */,
+				2706641424B95ACC00BB0C2A /* UIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		270663D024B944C000BB0C2A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2706641124B95AC800BB0C2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		273596B324B93A1D00CA72DF /* AppViewStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppViewStory.storyboard; sourceTree = "<group>"; };
 		273596B424B93A1D00CA72DF /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		273596B524B93A1D00CA72DF /* DocumentCamera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DocumentCamera.storyboard; sourceTree = "<group>"; };
@@ -57,7 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270663D224B944C200BB0C2A /* AVFoundation.framework in Frameworks */,
+				2706640E24B9596500BB0C2A /* AVFoundation.framework in Frameworks */,
+				2706641324B95ACC00BB0C2A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +170,7 @@
 		2787B2A3247EFA1A006064B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2706641124B95AC800BB0C2A /* UIKit.framework */,
 				270663D024B944C000BB0C2A /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -165,6 +186,7 @@
 				276ED51F247E0C48008675AD /* Sources */,
 				276ED520247E0C48008675AD /* Frameworks */,
 				276ED521247E0C48008675AD /* Resources */,
+				2706641024B9596500BB0C2A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
