@@ -16,7 +16,7 @@ protocol DocumentViewControllerDelegate: NSObjectProtocol{
 	func displayCropView(viewModel: Documents.cropImageSend.ViewModel)
 	func croppedFinished()
 }
-protocol DocumentComunicacionExternaViewControllerDelegate : NSObjectProtocol {
+public protocol DocumentComunicacionExternaViewControllerDelegate : NSObjectProtocol {
 	func captureDidFinishWithDocument(_ document: Document, captureVC: DocumentViewController)
 	func captureDidCancel(captureVC: DocumentViewController)
 }
@@ -112,7 +112,7 @@ open class DocumentViewController: UIViewController,DocumentViewControllerDelega
 		settings.previewPhotoFormat = previewFormat
 		stillImage.capturePhoto(with: settings, delegate: self)
 	}
-	static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentComunicacionExternaViewControllerDelegate) -> UINavigationController {
+	public static func captureDocumentViewController(proccessId: ProccessId, client: Client? = nil, delegate vcDelegate: DocumentComunicacionExternaViewControllerDelegate) -> UINavigationController {
 		let storyboardBundle = UIStoryboard(name: "DocumentCamera", bundle: Bundle(for: DocumentViewController.self))
 		let vc = storyboardBundle.instantiateViewController(identifier: "captureVC") as! DocumentViewController
 		vc.documentType = proccessId
